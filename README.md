@@ -7,7 +7,7 @@ This repository is my daily learning log. Every day I learn something new in **P
 - 📍 Based in: Pakistan
 - 🎯 Goal: Data Engineering Internship / Trainee role
 - 📅 Started: 8-Oct-2026
-- 🔗 LinkedIn: https://www.linkedin.com/in/daniyalrehman21/
+- 🔗 LinkedIn: [Daniyal Rehman](https://www.linkedin.com/in/daniyalrehman21/)
 
 ---
 
@@ -29,7 +29,7 @@ So that Data Analysts and AI/ML teams can use it. This process is called **ETL**
 
 | Phase               | Skills                                       | Status         |
 | ------------------- | -------------------------------------------- | -------------- |
-| Phase 1 (Weeks 1–4) | Python basics, MySQL / SQL                   | 🟡 In progress |
+| Phase 1             | Python basics, MySQL / SQL                   | 🟡 In progress |
 | Phase 2             | Pandas, data cleaning, Python + SQL together | ⬜ Next        |
 | Phase 3             | Git/Linux, data modeling, ETL pipelines      | ⬜ Planned     |
 | Phase 4             | Airflow, Spark, Cloud (AWS / Azure)          | ⬜ Planned     |
@@ -51,55 +51,87 @@ Data-Engineering/
 
 ---
 
-## 📅 4-Week Plan: Python + MySQL
+## 📚 Topics Covered in This Repo
 
-### Week 1: Basics
+### 🐍 Python
 
-| Day | Python                                                | MySQL                                                                |
-| --- | ----------------------------------------------------- | -------------------------------------------------------------------- |
-| 1   | Setup, `print`, variables, data types, `input()`      | Install MySQL, what is a database, `CREATE DATABASE`, `CREATE TABLE` |
-| 2   | Operators, type casting                               | `INSERT`, `SELECT`, `WHERE`                                          |
-| 3   | Strings: slicing, string methods, f-strings           | `AND` / `OR`, `IN`, `BETWEEN`, `LIKE`, `IS NULL`                     |
-| 4   | `if` / `elif` / `else`                                | `ORDER BY`, `LIMIT`, `DISTINCT`, `AS`                                |
-| 5   | Loops: `for`, `while`, `range()`, `break`, `continue` | `UPDATE`, `DELETE`, `ALTER`, `DROP`                                  |
-| 6   | Lists, list comprehension                             | Constraints: `PRIMARY KEY`, `NOT NULL`, `UNIQUE`, `DEFAULT`          |
-| 7   | 🧩 Mini project: Calculator / Guessing game           | 🧩 Student database + 20 queries                                     |
+**Basics**
+- Variables, data types, `print()`, `input()`, `type()`
+- Operators and type casting
+- Strings: slicing, string methods, f-strings
+- Conditions: `if` / `elif` / `else`
+- Loops: `for`, `while`, `range()`, `break`, `continue`
 
-### Week 2: Core Concepts
+**Data Structures**
+- Lists and list comprehension
+- Tuples and sets
+- Dictionaries
 
-| Day | Python                                        | MySQL                                          |
-| --- | --------------------------------------------- | ---------------------------------------------- |
-| 8   | Tuples, sets                                  | `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`            |
-| 9   | Dictionaries                                  | `GROUP BY`, `HAVING`                           |
-| 10  | Functions, `return`, `*args`, `**kwargs`      | `FOREIGN KEY`, table relationships             |
-| 11  | `lambda`, `map`, `filter`                     | `INNER JOIN`                                   |
-| 12  | File handling (read / write files)            | `LEFT JOIN`, `RIGHT JOIN`, self join           |
-| 13  | Error handling: `try` / `except`              | Subqueries                                     |
-| 14  | 🧩 Mini project: Contact book (saved in file) | 🧩 Employees + Departments DB, 15 join queries |
+**Functions & Error Handling**
+- Functions, `return`, `*args`, `**kwargs`
+- `lambda`, `map`, `filter`
+- Error handling: `try` / `except` / `finally`
 
-### Week 3: Intermediate
+**Files & Modules**
+- File handling (read / write files)
+- Modules, `pip`, virtual environment
+- CSV and JSON files
+- `datetime` and `os` modules
+- `requests`: getting data from an API
 
-| Day | Python                               | MySQL                                         |
-| --- | ------------------------------------ | --------------------------------------------- |
-| 15  | Modules, `pip`, virtual environment  | String & date functions                       |
-| 16  | OOP: classes & objects               | `CASE WHEN`, `COALESCE`                       |
-| 17  | OOP: inheritance                     | `UNION`, Views                                |
-| 18  | CSV & JSON files                     | CTE (`WITH`)                                  |
-| 19  | `datetime`, `os`                     | Window functions: `ROW_NUMBER`, `RANK`        |
-| 20  | `requests`: get data from an API     | `LAG`, `LEAD`, running totals                 |
-| 21  | 🧩 Mini project: API data → CSV file | 🧩 10–15 SQL problems (HackerRank / LeetCode) |
+**OOP**
+- Classes and objects
+- Inheritance, polymorphism, encapsulation
 
-### Week 4: Python + MySQL Together
+**Pandas**
+- DataFrame, `read_csv`
+- Filtering, `groupby`, `merge`
+- Data cleaning (nulls, duplicates, data types)
 
-| Day | Python                                 | MySQL                              |
-| --- | -------------------------------------- | ---------------------------------- |
-| 22  | Pandas: DataFrame, `read_csv`          | Indexes, `EXPLAIN`                 |
-| 23  | Pandas: filter, `groupby`, `merge`     | Normalization (1NF, 2NF, 3NF)      |
-| 24  | Pandas: data cleaning                  | Transactions: `COMMIT`, `ROLLBACK` |
-| 25  | Connect Python to MySQL                | Stored procedures (basic)          |
-| 26  | 🧩 Mini ETL: CSV → clean → MySQL       | Analysis queries on loaded data    |
-| 27  | 🚀 Final project: API → Pandas → MySQL | Table design + analysis            |
-| 28  | Finish project + write README          | Revision + SQL interview questions |
+### 🐬 MySQL
+
+**Basics**
+- What is a database and SQL
+- `CREATE DATABASE`, `CREATE TABLE`, `USE`
+- `INSERT`, `SELECT`
+- `UPDATE`, `DELETE`, `ALTER`, `DROP`, `TRUNCATE`
+
+**Constraints**
+- `PRIMARY KEY`, `NOT NULL`, `UNIQUE`
+- `DEFAULT`, `CHECK`, `AUTO_INCREMENT`
+- `FOREIGN KEY` and table relationships
+
+**Filtering & Sorting**
+- `WHERE` clause
+- `AND`, `OR`, `NOT`
+- `BETWEEN`, `IN`, `LIKE`, `IS NULL`
+- `ORDER BY`, `LIMIT`, `DISTINCT`, aliases (`AS`)
+
+**Aggregation**
+- `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`
+- `GROUP BY`, `HAVING`
+
+**Joins & Subqueries**
+- `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, self join
+- Subqueries
+- `UNION` and Views
+
+**Advanced SQL**
+- String and date functions
+- `CASE WHEN`, `COALESCE`
+- CTE (`WITH`)
+- Window functions: `ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, `LEAD`
+
+**Database Design & Performance**
+- Indexes and `EXPLAIN`
+- Normalization (1NF, 2NF, 3NF)
+- Transactions: `COMMIT`, `ROLLBACK`
+- Stored procedures
+
+### 🔗 Python + MySQL Together
+- Connecting Python to MySQL
+- Mini ETL: CSV → clean with Pandas → load into MySQL
+- Final project: API → Pandas → MySQL
 
 ---
 
