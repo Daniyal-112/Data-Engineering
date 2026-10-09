@@ -58,7 +58,6 @@ VALUES (110, 'Hamza', 65, 'D');
 
 SELECT * FROM student;
 
-
 -- ---------- DISTINCT ----------
 -- Gives only unique values
 SELECT DISTINCT grade FROM student;
