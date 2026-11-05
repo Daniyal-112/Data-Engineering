@@ -167,3 +167,80 @@ GROUP BY
   MONTH (order_date)
 ORDER BY
   MONTH (order_date);
+
+-- Q17 Considering only delivered orders, show the categories whose revenue is above 50,000.
+SELECT
+  category,
+  SUM(quantity * price) AS total_revenue
+FROM
+  orders
+WHERE
+  status = 'Delivered'
+GROUP BY
+  category
+HAVING
+  SUM(quantity * price) > 50000
+ORDER BY
+  total_revenue DESC;
+
+-- Q18 Considering only delivered orders, show the cities with at least 3 orders, with the highest revenue first.
+SELECT
+  city,
+  SUM(quantity * price) AS total_revenue,
+  COUNT(order_id) AS order_count
+FROM
+  orders
+WHERE
+  status = 'Delivered'
+GROUP BY
+  city
+HAVING
+  COUNT(order_id) >= 3
+ORDER BY
+  total_revenue DESC;
+
+-- Q19 Show the customers who placed more than 2 orders and whose total spending (all orders) is above 20,000, highest spending first.
+SELECT
+  customer,
+  COUNT(*) AS total_orders,
+  SUM(quantity * price) AS total_spending
+FROM
+  orders
+GROUP BY
+  customer
+HAVING
+  COUNT(*) > 2
+  AND SUM(quantity * price) > 20000
+ORDER BY
+  total_spending DESC;
+
+-- Q20 Show the category and product combinations that were ordered more than once.
+SELECT
+  category,
+  product,
+  COUNT(*) AS times_ordered
+FROM
+  orders
+GROUP BY
+  category,
+  product
+HAVING
+  COUNT(*) > 1
+ORDER BY
+  category,
+  product;
+
+-- Bonus Show the top 3 customers by spending on delivered orders.
+SELECT
+  customer,
+  SUM(quantity * price) AS total_spending
+FROM
+  orders
+WHERE
+  status = 'Delivered'
+GROUP BY
+  customer
+ORDER BY
+  total_spending DESC
+LIMIT
+  3;
